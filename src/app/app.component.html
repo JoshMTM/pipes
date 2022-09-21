@@ -71,8 +71,8 @@
       <label>
         <b>Kilometers</b>
       </label>
-      <div>
-        {{ miles | convert }}
+      <div *ngIf="miles > 10">
+        {{ miles | convert: "km"}}
       </div>
     </div>
   </div>
