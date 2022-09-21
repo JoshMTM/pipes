@@ -71,6 +71,7 @@
       <label>
         <b>Kilometers</b>
       </label>
+      <!-- Check if the value entered is more than 10 -->
       <div *ngIf="miles > 10">
         {{ miles | convert: "km"}}
       </div>
